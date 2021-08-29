@@ -3,11 +3,11 @@ from  flask import Blueprint
 auth = Blueprint('auth', __name__)
 
 @auth.route('/in')
-def in():
+def login():
     return "<h2> Passcode? </h2>"
 
 @auth.route('/out')
-def out():
+def logout():
     return "<h2> Bye! </h2>"
 
 @auth.route('/new-code')
